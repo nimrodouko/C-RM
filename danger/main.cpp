@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include<string>
+
 int main() {
     std::cout<<std::dec;
     std::cout<<std::uppercase;
@@ -45,5 +45,23 @@ std::cout<<sizeof(scores)<<std::endl;
 char message1 []{"hello what is your name ?"};
 std::cout<<"message 1 is" <<message1<<std::endl;
 std::cout<<sizeof(message1)<<std::endl;
+//pointers
+int int_var{43};
+int* p_int{&int_var};
+std::cout<<int_var<<std::endl;
+std::cout<<p_int<<std::endl;
+
+int int_var1{65};
+p_int =&int_var1;
+std::cout<<p_int<<std::endl;
+
+int int_var2 {54};
+int *ptr_2{nullptr};
+ptr_2 = &int_var2;
+std::cout<<*ptr_2<<std::endl;
+
+const char *data{"Hello world"};
+std::cout<<data<<std::endl;
+std::cout<<*data<<std::endl;
    return 0;
 }
