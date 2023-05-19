@@ -45,6 +45,7 @@ std::cout<<sizeof(scores)<<std::endl;
 char message1 []{"hello what is your name ?"};
 std::cout<<"message 1 is" <<message1<<std::endl;
 std::cout<<sizeof(message1)<<std::endl;
+
 //pointers
 int int_var{43};
 int* p_int{&int_var};
@@ -63,5 +64,54 @@ std::cout<<*ptr_2<<std::endl;
 const char *data{"Hello world"};
 std::cout<<data<<std::endl;
 std::cout<<*data<<std::endl;
+//heap: can be used outside a certain scope
+int *p_number{nullptr};
+p_number = new int;
+*p_number = 44;
+std::cout<<*p_number<<std::endl;
+delete p_number;
+p_number = nullptr;
+
+
+int *p_number1{new int {23}};
+std::cout<<"p number 1 : "<< *p_number1<<std::endl;
+delete p_number1;
+p_number1 = nullptr;
+
+p_number= new int{83};
+std::cout<<*p_number<<std::endl;
+
+delete p_number;
+p_number = nullptr;
+/*
+int * p_number2{new int{382}};
+int* p_number3{p_number2};
+std::cout<< *p_number3<<std::endl;
+
+delete p_number2;
+p_number2 = nullptr;
+std::cout<<"ending well..."<<std::endl;*/
+//int *data = new int[10000000000000000000000000];
+size_t size{10};
+double *p_salaries {new double[size]{}};
+int *p_students{new(std::nothrow)int[size]{}};
+double *p_scores{new(std::nothrow)double[size]{1,2,3,4,5}};
+
+for(size_t i{};i<size;++i){
+    std::cout<<"value :" <<p_scores[i]<<":"<<*(p_scores+i)<<std::endl;
+}
+delete []p_salaries;
+p_salaries = nullptr;
+
+delete[]p_students;
+p_students = nullptr;
+
+delete []p_scores;
+p_scores = nullptr;
+
+
+
+
+
    return 0;
 }

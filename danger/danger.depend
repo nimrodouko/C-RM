@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1684507678 source:c:\users\nimrod\desktop\classes\danger\main.cpp
+	<iostream>
+	<cmath>
+
