@@ -109,7 +109,12 @@ p_students = nullptr;
 delete []p_scores;
 p_scores = nullptr;
 
+int value{45};
 
+int & ref_int{value};
+std::cout<<&value<<std::endl;
+std::cout<<ref_int<<std::endl;
+std::cout<<& ref_int<<std::endl;
 
 
 
