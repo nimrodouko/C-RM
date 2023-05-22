@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+#include <string>
 int main() {
     std::cout<<std::dec;
     std::cout<<std::uppercase;
@@ -115,6 +115,34 @@ int & ref_int{value};
 std::cout<<&value<<std::endl;
 std::cout<<ref_int<<std::endl;
 std::cout<<& ref_int<<std::endl;
+
+double double_value{12.34};
+double &ref_double_value{double_value};
+double other_double_value{100.23};
+
+std::cout<<std::endl;
+/*
+char original _str[]{"Home . the feeling of belonging"};
+char dest_str[std::size(original_str)];
+for (size_t i{}; i<std::size(original-str); i++){
+    dest_str[i] = std::toupper(original_sr[i]);
+}
+std::cout<<"Uppercasestring :" <<original_str<<std::endl;*/
+
+char thought[]{"c++ is Good For All"};
+size_t lowercasecount{};
+size_t uppercasecount{};
+for (auto character : thought){
+    if(std::islower(character)){
+        ++lowercasecount;
+    }
+    if(std::isupper(character)){
+        ++uppercasecount;
+    }
+}
+std::cout<<lowercasecount<<std::endl;
+std::cout<<uppercasecount<<std::endl;
+
 
 
 
