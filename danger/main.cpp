@@ -142,8 +142,22 @@ for (auto character : thought){
 }
 std::cout<<lowercasecount<<std::endl;
 std::cout<<uppercasecount<<std::endl;
+//size_t blankcount{};
+/*for(size_t{0};i<std::size(thought);++i){
+    if(std::isblank(thought[i])){
+        std::cout<<i<<std::endl;
+        ++blankcount;
+    }
+}
+std::cout<<blankcount<<std::endl;
+*/
+size_t numbers[5]{2,4,6,7,8};
+unsigned int sum{};
+for (size_t{0}; i<std::size(numbers);++i){
+        sum += numbers;
 
-
+}
+std::cout<<sum<<std::endl;
 
 
    return 0;
