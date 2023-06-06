@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <cstring>
 int main() {
     std::cout<<std::dec;
     std::cout<<std::uppercase;
@@ -151,13 +152,38 @@ std::cout<<uppercasecount<<std::endl;
 }
 std::cout<<blankcount<<std::endl;
 */
-size_t numbers[5]{2,4,6,7,8};
+/*size_t numbers[5]{2,4,6,7,8};
 unsigned int sum{};
 for (size_t{0}; i<std::size(numbers);++i){
         sum += numbers;
 
 }
 std::cout<<sum<<std::endl;
+*//*
+const char message1[]{"the sky is blue"};
+
+const char * message2{"the  sky is red"};
+std::cout<<"message1: "<<std::strlen(message1)<<std::endl;
+char string_data1 {"main"};
+string hero{"none"};
+
+std::cout<<"Compare:"<<std::strncmp(hero,strncmp);
+*/
+
+std::string fullname{};
+std::string planet{"hello my planet is earth"};
+std::string copies(4, 'e');
+std::string greeting{"Hello world"};
+std::string saying_hello{greeting,6,5};
+std::cout<<fullname<<std::endl;
+std::cout<<planet<<std::endl;
+std::cout<<copies<<std::endl;
+std::cout<<saying_hello<<std::endl;
+
+
+
+
+
 
 
    return 0;
