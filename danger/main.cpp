@@ -180,6 +180,27 @@ std::cout<<planet<<std::endl;
 std::cout<<copies<<std::endl;
 std::cout<<saying_hello<<std::endl;
 
+/*one definition rule shold be defined only once*/
+double weight {56.8988};
+std::cout<<weight<<std::endl;
+
+/*double result (a+b);*/
+/*double add(double a, double b){
+    return a+b;
+}*/
+
+struct Point
+{
+    double m_x;
+    double m_y;
+
+};
+Point p1;
+std::cout<<p1.m_x<<std::endl;
+std::cout<<p1.m_y<<std::endl;
+
+
+
 
 
 
