@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1684601962 source:c:\users\nimrod\desktop\classes\danger\main.cpp
+1686078154 source:c:\users\nimrod\desktop\classes\danger\main.cpp
 	<iostream>
 	<cmath>
+	<string>
+	<cstring>
 
